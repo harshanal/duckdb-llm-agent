@@ -75,14 +75,19 @@ The LLM will interpret the query, generate the appropriate SQL command, execute 
 ### Example Output
 
 ```
->>> how many ducks are there in the database
->>> tool_call: {'name': 'query', 'args': {'query': 'SELECT COUNT(*) FROM ducks;'}, 'id': 'd011f318-ee30-4046-b37e-06c668171d52', 'type': 'tool_call'}
->>> tool_output: 3
-There are 3 ducks in the database.
-
->>> What is the combined age of the ducks in the database?
->>> tool_call: {'name': 'query', 'args': {'query': 'SELECT SUM(age) AS total_age FROM ducks'}, 'id': 'c3de759d-be97-4012-b85e-db694698e36e', 'type': 'tool_call'}
+>>> how many ducks are in the database
+>>> tool_call: {'name': 'query', 'args': {'query': 'SELECT COUNT(*) AS duck_count FROM ducks'}, 'id': 'b54fdd6b-8b0a-41ae-89c2-ebe740760566', 'type': 'tool_call'}
 >>> tool_output: 10
+There are 10 ducks in the database.
+
+>>> what color is Darth's shirt?
+>>> tool_call: {'name': 'query', 'args': {'query': "SELECT color FROM ducks WHERE firstName = 'Darth';"}, 'id': '31a1e41e-1399-4fe3-9dc5-29addf523686', 'type': 'tool_call'}
+>>> tool_output: black
+Darth's shirt is black.
+
+>>> what is the combined age of all the male ducks?
+>>> tool_call: {'name': 'query', 'args': {'query': "SELECT SUM(age) FROM ducks WHERE gender = 'male';"}, 'id': '74d225c8-a24e-440e-95e3-d1a52d99c7f6', 'type': 'tool_call'}
+>>> tool_output: 212
 ```
 
 ## License
