@@ -1,6 +1,8 @@
 # Local LLM with DuckDB Integration
 
-This project demonstrates how to integrate a local Large Language Model (LLM) using [Ollama](https://ollama.com/) with [DuckDB](https://duckdb.org/), a high-performance in-process SQL database. The code is based on a demonstration by Jeffrey Morgan, founder of Ollama, at the [Small Data SF](https://www.smalldatasf.com/) event.
+This project is based on a demonstration by Jeffrey Morgan, founder of [Ollama](https://ollama.com/), presented at the [Small Data SF](https://www.smalldatasf.com/) event. Special thanks to Jeffrey for showcasing the integration of local LLMs with DuckDB.
+
+Watch the original talk on YouTube: [Running Small LLMs Locally – Jeffrey Morgan at Small Data SF](https://www.youtube.com/watch?v=P-55pV6ss3k)
 
 ## Features
 
@@ -82,13 +84,6 @@ There are 3 ducks in the database.
 >>> tool_call: {'name': 'query', 'args': {'query': 'SELECT SUM(age) AS total_age FROM ducks'}, 'id': 'c3de759d-be97-4012-b85e-db694698e36e', 'type': 'tool_call'}
 >>> tool_output: 10
 ```
-
-## Acknowledgments
-
-Watch the original talk on YouTube: [Running Small LLMs Locally – Jeffrey Morgan at Small Data SF](https://www.youtube.com/watch?v=P-55pV6ss3k)
-
-
-This project is based on a demonstration by Jeffrey Morgan, founder of [Ollama](https://ollama.com/), presented at the [Small Data SF](https://www.smalldatasf.com/) event. Special thanks to Jeffrey for showcasing the integration of local LLMs with DuckDB.
 
 ## License
 
