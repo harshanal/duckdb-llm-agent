@@ -1,6 +1,6 @@
 # Local LLM with DuckDB Integration
 
-This project is based on a demonstration by Jeffrey Morgan, founder of [Ollama](https://ollama.com/), presented at the [Small Data SF](https://www.smalldatasf.com/) event. Special thanks to Jeffrey for showcasing the integration of local LLMs with DuckDB.
+This project is based on a demonstration by Jeffrey Morgan, founder of [Ollama](https://ollama.com/), presented at the [Small Data SF](https://www.smalldatasf.com/) event. 
 
 Watch the original talk on YouTube: [Running Small LLMs Locally – Jeffrey Morgan at Small Data SF](https://www.youtube.com/watch?v=P-55pV6ss3k)
 
